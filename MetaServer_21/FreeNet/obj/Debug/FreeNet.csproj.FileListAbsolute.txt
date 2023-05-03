@@ -1,0 +1,6 @@
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\FreeNet\bin\Debug\FreeNet.dll
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\FreeNet\bin\Debug\FreeNet.pdb
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\FreeNet\obj\Debug\FreeNet.csproj.AssemblyReference.cache
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\FreeNet\obj\Debug\FreeNet.csproj.CoreCompileInputs.cache
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\FreeNet\obj\Debug\FreeNet.dll
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\FreeNet\obj\Debug\FreeNet.pdb

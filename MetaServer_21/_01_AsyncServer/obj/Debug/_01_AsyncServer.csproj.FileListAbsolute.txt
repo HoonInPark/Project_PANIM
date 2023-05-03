@@ -1,0 +1,8 @@
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_01_AsyncServer\bin\Debug\_01_AsyncServer.exe.config
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_01_AsyncServer\bin\Debug\_01_AsyncServer.exe
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_01_AsyncServer\bin\Debug\_01_AsyncServer.pdb
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_01_AsyncServer\obj\Debug\_01_AsyncServer.csproj.AssemblyReference.cache
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_01_AsyncServer\obj\Debug\_01_AsyncServer.csproj.SuggestedBindingRedirects.cache
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_01_AsyncServer\obj\Debug\_01_AsyncServer.csproj.CoreCompileInputs.cache
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_01_AsyncServer\obj\Debug\_01_AsyncServer.exe
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_01_AsyncServer\obj\Debug\_01_AsyncServer.pdb

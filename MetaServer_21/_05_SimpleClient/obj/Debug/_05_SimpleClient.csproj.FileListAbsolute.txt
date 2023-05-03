@@ -1,0 +1,11 @@
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_05_SimpleClient\bin\Debug\_05_SimpleClient.exe.config
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_05_SimpleClient\bin\Debug\_05_SimpleClient.exe
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_05_SimpleClient\bin\Debug\_05_SimpleClient.pdb
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_05_SimpleClient\bin\Debug\FreeNet.dll
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_05_SimpleClient\bin\Debug\FreeNet.pdb
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_05_SimpleClient\obj\Debug\_05_SimpleClient.csproj.AssemblyReference.cache
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_05_SimpleClient\obj\Debug\_05_SimpleClient.csproj.SuggestedBindingRedirects.cache
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_05_SimpleClient\obj\Debug\_05_SimpleClient.csproj.CoreCompileInputs.cache
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_05_SimpleClient\obj\Debug\_05_SimpleClient.csproj.CopyComplete
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_05_SimpleClient\obj\Debug\_05_SimpleClient.exe
+D:\Lecture\_16_Server\_04_MetaServer\MetaServer\_05_SimpleClient\obj\Debug\_05_SimpleClient.pdb
