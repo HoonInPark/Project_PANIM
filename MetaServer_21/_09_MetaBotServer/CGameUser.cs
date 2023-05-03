@@ -8,10 +8,12 @@ using System.Threading.Tasks;
 
 namespace _09_MetaBotServer
 {
+    // 패킷의 비즈니스 로직 분기를 위한 클라이언트
     public class CGameUser : IPeer
     {
-        CProcessPacket procPacket;
-        CUserToken token;
+        public CPlayer PLAYER { get; set; } // 게임룸 내에서의 클라이언트관련 정보를 담당.
+        CProcessPacket procPacket; // 하나의 클래스로만 패킷을 처리하면 모듈화하기 힘들다.
+        CUserToken token; // 패킷 처리를 해주는 곳.
 
         public delegate void Remove_user(CGameUser user);
         public Remove_user remove_user_callback { get; set; }
@@ -47,7 +49,7 @@ namespace _09_MetaBotServer
 
             switch(protocol)
             {
-                case PROTOCOL.REG_MEMBER_REQ:
+                case PROTOCOL.REG_MEMBER_REQ: 
                     procPacket.Process_REG_MEMBER_REQ(msg);
                     break;
                 case PROTOCOL.LOGIN_REQ:
@@ -58,6 +60,9 @@ namespace _09_MetaBotServer
                     break;
                 case PROTOCOL.MAKE_ROOM_REQ:
                     procPacket.Process_MAKE_ROOM_REQ(msg);
+                    break;
+                case PROTOCOL.JOIN_ROOM_REQ:
+                    procPacket.Process_JOINROOM_REQ(msg);
                     break;
             }
         }

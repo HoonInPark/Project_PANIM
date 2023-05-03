@@ -13,9 +13,12 @@ namespace _09_MetaBotServer
     {
         static CProcessPacket procPacket = new CProcessPacket();
         static List<CGameUser> userlist = new List<CGameUser>();
+        static CGameRoomManager gameRoomMgr = new CGameRoomManager();
 
         static void Main(string[] args)
         {
+            procPacket.GAMEROOM_MGR = gameRoomMgr; // 만들어진 객체를 여기에 전달하여 GAMEROOM_MGR에 접근할 수 있게 만든다.
+            
             CPacketBufferManager.initialize(2000);
 
             CNetworkService service = new CNetworkService();

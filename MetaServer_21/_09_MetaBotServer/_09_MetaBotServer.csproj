@@ -49,7 +49,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CGameRoom.cs" />
+    <Compile Include="CGameRoomManager.cs" />
     <Compile Include="CGameUser.cs" />
+    <Compile Include="CPlayer.cs" />
     <Compile Include="CProcessPacket.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

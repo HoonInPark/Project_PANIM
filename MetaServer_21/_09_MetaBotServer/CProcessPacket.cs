@@ -11,6 +11,8 @@ namespace _09_MetaBotServer
 {
     public class CProcessPacket
     {
+        public CGameRoomManager GAMEROOM_MGR { get; set; } // 게임룸 객체를 저장할 수 있는 곳이다.
+        
         GameRoomDao gameDao = new GameRoomDao();
         MemberDao memDao = new MemberDao();
 
@@ -78,10 +80,39 @@ namespace _09_MetaBotServer
             ack.push(user_id);
             ack.push(gameroom_id);
             if (row == 1)
-                ack.push((byte)1);
+            {
+                // CGameRoomManager의 List에 새로 생성된 CGameRoom 객체를 등록한다.
+                GAMEROOM_MGR.AddRoomList(new CGameRoom(gameroom_id, gameroom_name));
+                ack.push((byte)1); // 성공
+            }
             else
                 ack.push((byte)0);
 
+            msg.owner.send(ack);
+        }
+        
+        public void Process_JOINROOM_REQ(CPacket msg)
+        {
+            string user_id = msg.pop_string();
+            string gameroom_id = msg.pop_string();
+            string gameroom_name = msg.pop_string();
+
+            int row = memDao.UpdateMemberJoin(user_id, gameroom_id);
+
+            // 이제 응답을 줄 차례이다.
+            CPacket ack = CPacket.create((short)PROTOCOL.JOIN_ROOM_ACK);
+            ack.push(user_id);
+            ack.push(gameroom_id);
+            if (row == 1)
+            {
+                GAMEROOM_MGR.AddRoomCreatePlayer(gameroom_id, gameroom_name, (CGameUser)msg.owner, user_id);
+                ack.push((byte)1);
+            }
+            else
+            {
+                ack.push((byte)0);
+            }
+            
             msg.owner.send(ack);
         }
     }
